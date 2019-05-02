@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:SDL Tutorial.xcodeproj">
+      location = "self:/Users/gabrielmarques/GameDev/cpp/sdl_tutorial/sdl_tutorial.xcodeproj">
    </FileRef>
 </Workspace>
