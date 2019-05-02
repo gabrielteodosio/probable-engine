@@ -18,6 +18,8 @@ Dimensions playerDimensions;
 GameObject *player;
 GameObject *enemy;
 
+SDL_Renderer *Game::renderer = nullptr;
+
 Game::Game() {
     
 }
@@ -54,8 +56,8 @@ void Game::init(const char *title, int width, int height, bool fullscreen) {
     const char* playerSpritePath = "assets/adventurer-idle-2-00.png";
     const char* enemySpritePath = "assets/adventurer-bow-00.png";
     
-    player = new GameObject(playerSpritePath, renderer, 0, 0);
-    enemy = new GameObject(enemySpritePath, renderer, 57, 0);
+    player = new GameObject(playerSpritePath, 0, 0);
+    enemy = new GameObject(enemySpritePath, 57, 0);
 }
 
 void Game::handleEvents() {
